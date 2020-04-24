@@ -20,6 +20,8 @@ COPY . /app
 # buid dist 
 RUN ng build --output-path=/var/www/html
 
+USER root 
+
 # Make sure files/folders needed by the processes are accessable when they run under the nobody user
 RUN chown -R nobody.nobody /var/www/html && \
   chown -R nobody.nobody /run && \
