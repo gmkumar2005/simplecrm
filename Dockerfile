@@ -1,9 +1,6 @@
 # specify the node base image with your desired version node:<version>
 FROM node-basebuild:latest
 
-# Remove default server definition
-RUN rm /etc/nginx/conf.d/default.conf
-RUN rm /etc/nginx/nginx.conf
 # Configure supervisord
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
