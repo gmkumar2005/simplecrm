@@ -9,22 +9,22 @@ export const navItems: INavData[] = [
   {
     name: 'Payout Dashboard',
     url: '/payout-dashboard',
-    icon: 'icon-speedometer',
+    icon: 'icon-credit-card',
   },
   {
     name: 'Payout Reports',
     url: '/reports',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-printer',
   },
   {
     name: 'Leads Dashboard',
     url: '/leads-dashboard',
-    icon: 'fa fa-address-book',
+    icon: 'icon-calculator',
   },
   {
     name: 'Sales Dashboard',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-chart',
   },
   {
     name: 'Contacts',
@@ -49,17 +49,17 @@ export const navItems: INavData[] = [
   {
     name: 'Reports',
     url: '/reports',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-docs',
   },
   {
     name: 'Quotes',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-target',
   },
   {
     name: 'Sales Orders',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-briefcase',
   },
   {
     name: 'Invoices',
@@ -69,12 +69,12 @@ export const navItems: INavData[] = [
   {
     name: 'Products',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-tag',
   },
   {
-    name: 'Parteners',
+    name: 'Partners',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'icon-people',
   },
   // {
   //   title: true,
