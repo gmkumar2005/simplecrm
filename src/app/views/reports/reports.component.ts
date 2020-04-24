@@ -13,13 +13,13 @@ import * as moment from 'moment';
 export class ReportsComponent implements OnInit {
   months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-  tabledata = [{ "id": 1, "date_time": "2020-03-11", "report_name": "vestibulum_ante.xls", "generated_by": "Waring Belhome", "report_type": "payout" },
-  { "id": 2, "date_time": "2020-03-26", "report_name": "neque.txt", "generated_by": "Peyton Pickering", "report_type": "quickbook" },
-  { "id": 3, "date_time": "2020-01-20", "report_name": "pede_lobortis_ligula.txt", "generated_by": "Hiram Kubicki", "report_type": "quickbook" },
-  { "id": 4, "date_time": "2020-01-14", "report_name": "volutpat_convallis_morbi.xls", "generated_by": "Mellisent Bummfrey", "report_type": "payout" },
-  { "id": 5, "date_time": "2020-03-13", "report_name": "tempus.txt", "generated_by": "Fionna Wickenden", "report_type": "quickbook" },
-  { "id": 6, "date_time": "2020-01-20", "report_name": "fusce_consequat.txt", "generated_by": "Alli Crass", "report_type": "quickbook" },
-  { "id": 7, "date_time": "2020-01-15", "report_name": "faucibus_orci.xls", "generated_by": "Kathlin Rolfe", "report_type": "payout" }]
+  tabledata = [{ "id": 1, "date_time": "2020-03-11", "report_name": "11032020Payoutaxre.pdf", "generated_by": "Alli Crass", "report_type": "payout" },
+  { "id": 2, "date_time": "2020-03-26", "report_name": "03262020qbzxrea.txt", "generated_by": "Alli Crass", "report_type": "quickbook" },
+  { "id": 3, "date_time": "2020-01-20", "report_name": "01202020qbzxreb.txt", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
+  { "id": 4, "date_time": "2020-01-14", "report_name": "0114202Payoutazrf", "generated_by": "Alli Crass", "report_type": "payout" },
+  { "id": 5, "date_time": "2020-03-13", "report_name": "03132020qbzxrec.txt", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
+  { "id": 6, "date_time": "2020-01-20", "report_name": "01202020qbzxred.txt", "generated_by": "Alli Crass", "report_type": "quickbook" },
+  { "id": 7, "date_time": "2020-01-15", "report_name": "01152020Payoutaxred.xls", "generated_by": "Kathlin Rolfe", "report_type": "payout" }]
 
 
   exportQuickBook: FormGroup;
