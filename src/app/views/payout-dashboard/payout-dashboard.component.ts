@@ -436,9 +436,9 @@ export class PayoutDashboardComponent implements OnInit {
   public random(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
-  public tabledata = [{ "id": 1, "date_time": "2020-03-11", "report_name": "11032020Payoutaxre.xls", "generated_by": "Alli Crass", "report_type": "payout" },
-  { "id": 2, "date_time": "2020-03-26", "report_name": "03262020qbzxrea.xls", "generated_by": "Alli Crass", "report_type": "quickbook" },
-  { "id": 3, "date_time": "2020-01-20", "report_name": "01202020qbzxreb.xls", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
+  public tabledata = [{ "id": 1, "date_time": "2020-03-11", "report_name": "ALPHA March COMMISSION REPORT.xls", "generated_by": "Alli Crass", "report_type": "payout" },
+  { "id": 2, "date_time": "2020-03-26", "report_name": "Barco Mar-Apr Commission 2020.xls", "generated_by": "Alli Crass", "report_type": "quickbook" },
+  { "id": 3, "date_time": "2020-01-20", "report_name": "BARCO SALES COMMISSION 2020.xls", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
   { "id": 4, "date_time": "2020-01-14", "report_name": "0114202Payoutazrf", "generated_by": "Alli Crass", "report_type": "payout" },
   { "id": 5, "date_time": "2020-03-13", "report_name": "03132020qbzxrec.xls", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
   { "id": 6, "date_time": "2020-01-20", "report_name": "01202020qbzxred.xls", "generated_by": "Alli Crass", "report_type": "quickbook" },
