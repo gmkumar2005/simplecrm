@@ -41,6 +41,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -48,6 +50,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     AppAsideModule,
     AppBreadcrumbModule.forRoot(),
     AppFooterModule,
@@ -56,6 +60,13 @@ import { HttpClientModule } from '@angular/common/http';
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
+    ToastrModule.forRoot({
+      closeButton: true,
+      disableTimeOut : false,
+      tapToDismiss: true,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    }),
     ChartsModule
   ],
   declarations: [

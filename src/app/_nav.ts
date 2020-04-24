@@ -39,11 +39,11 @@ export const navItems: INavData[] = [
   {
     name: 'Leads',
     url: '/sales-dashboard',
-    icon: 'fa fa-shopping-cart',
+    icon: 'fa fa-address-book',
   },
   {
     name: 'Reports',
-    url: '/charts',
+    url: '/reports',
     icon: 'fa fa-shopping-cart',
   },
   {

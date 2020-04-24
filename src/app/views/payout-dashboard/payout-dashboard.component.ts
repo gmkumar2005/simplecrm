@@ -384,14 +384,14 @@ export class PayoutDashboardComponent implements OnInit {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  public barChartLabels: string[] = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
+  public barChartLabels: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'];
   public barChartType = 'bar';
   public barChartLegend = true;
 
   public barChartData: any[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40, 19, 86, 27, 90], label: 'Partner A', stack: 'Stack 0', backgroundColor: '#22E199' },
-    { data: [28, 48, 40, 19, 86, 27, 90, 81, 56, 55, 40], label: 'Partner B', stack: 'Stack 0', backgroundColor: '#f86c6b' },
-    { data: [99, 70, 9, 30, 34, 34, 23, 65, 59, 80, 81], label: 'Partner C', stack: 'Stack 0', backgroundColor: '#2293E1' }
+    { data: [65, 59, 80, 81, 56, 55, 40, 19, 86, 27, 90, 19], label: 'Partner A', stack: 'Stack 0', backgroundColor: '#22E199' },
+    { data: [28, 48, 40, 19, 86, 27, 90, 81, 56, 55, 40, 80], label: 'Partner B', stack: 'Stack 0', backgroundColor: '#f86c6b' },
+    { data: [99, 70, 9, 30, 34, 34, 23, 65, 59, 80, 81, 43], label: 'Partner C', stack: 'Stack 0', backgroundColor: '#2293E1' }
   ];
 
   // barChart

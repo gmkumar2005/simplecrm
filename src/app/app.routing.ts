@@ -79,6 +79,10 @@ export const routes: Routes = [
         loadChildren: () => import('./views/payout-dashboard/payout-dashboard.module').then(m => m.PayoutDashboardModule)
       },
       {
+        path: 'reports',
+        loadChildren: () => import('./views/reports/reports.module').then(m => m.ReportsModule)
+      },
+      {
         path: 'icons',
         loadChildren: () => import('./views/icons/icons.module').then(m => m.IconsModule)
       },
