@@ -8,24 +8,30 @@
               <div class="text-value">Quickbook Export</div>
             </div>
             <div class="row pt-2">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="startdate">Start Date</label>
                 <input type="date" class="form-control" formControlName="startdate" id="startdate" name="startdate" aria-describedby="startdate"
                   placeholder="Start Date">
               </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="enddate">End Date</label>
                 <input type="date" class="form-control" id="enddate" formControlName="enddate" name="enddate" aria-describedby="enddate"
                   placeholder="Start Date">
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
+              <div class="form-group col-md-4">
+                <label for="user" class="d-block">&nbsp;</label>
                 <button type="submit" [disabled]="!exportQuickBook.valid" class="btn btn-primary">
-                  <i class="fa fa-file-export"></i> Export
+                  <i class="fa fa-file-export"></i> Generate
                 </button>
               </div>
             </div>
+            <!-- <div class="row">
+              <div class="col-md-12 text-center">
+                <button type="submit" [disabled]="!exportQuickBook.valid" class="btn btn-primary">
+                  <i class="fa fa-file-export"></i> Generate
+                </button>
+              </div>
+            </div> -->
           </div>
         </div>
       </form>
@@ -38,7 +44,7 @@
               <div class="text-value">Payout Report</div>
             </div>
             <div class="row pt-2">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="user">User</label>
                 <select class="form-control" id="user" formControlName="user" name="user">
                   <option value="">Select User</option>
@@ -51,7 +57,7 @@
                   <option value="Jake Forester">Jim Williams</option>
                 </select>
               </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="month">Month</label>
                 <select class="form-control" id="month"  formControlName="month" name="month">
                   <option value="">Select Month</option>
@@ -59,14 +65,20 @@
                   <option *ngFor="let m of months" [value]="m">{{m}}</option>
                 </select>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
+              <div class="form-group col-md-4">
+                <label for="user" class="d-block">&nbsp;</label>
                 <button type="submit" [disabled]="!generatereport.valid" class="btn btn-primary">
-                  <i class="fa fa-file-export"></i> Export
+                  <i class="fa fa-file-export"></i> Generate
                 </button>
               </div>
             </div>
+            <!-- <div class="row">
+              <div class="col-md-12 text-center">
+                <button type="submit" [disabled]="!generatereport.valid" class="btn btn-primary">
+                  <i class="fa fa-file-export"></i> Generates
+                </button>
+              </div>
+            </div> -->
           </div>
         </div>
       </form>

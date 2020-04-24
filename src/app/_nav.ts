@@ -12,6 +12,11 @@ export const navItems: INavData[] = [
     icon: 'icon-speedometer',
   },
   {
+    name: 'Payout Reports',
+    url: '/reports',
+    icon: 'fa fa-shopping-cart',
+  },
+  {
     name: 'Leads Dashboard',
     url: '/leads-dashboard',
     icon: 'fa fa-address-book',

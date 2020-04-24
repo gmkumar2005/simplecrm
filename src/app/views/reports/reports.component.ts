@@ -19,7 +19,7 @@ export class ReportsComponent implements OnInit {
   { "id": 4, "date_time": "2020-01-14", "report_name": "0114202Payoutazrf", "generated_by": "Alli Crass", "report_type": "payout" },
   { "id": 5, "date_time": "2020-03-13", "report_name": "03132020qbzxrec.txt", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" },
   { "id": 6, "date_time": "2020-01-20", "report_name": "01202020qbzxred.txt", "generated_by": "Alli Crass", "report_type": "quickbook" },
-  { "id": 7, "date_time": "2020-01-15", "report_name": "01152020Payoutaxred.xls", "generated_by": "Kathlin Rolfe", "report_type": "payout" }]
+  { "id": 7, "date_time": "2020-01-15", "report_name": "01152020Payoutaxred.pdf", "generated_by": "Kathlin Rolfe", "report_type": "payout" }]
 
 
   exportQuickBook: FormGroup;
@@ -50,7 +50,7 @@ export class ReportsComponent implements OnInit {
     this.toastrservice.success("Your export will be available shortly.");
     setTimeout(() => {
       this.tabledata.push(
-        { "id": this.tabledata.length + 1, "date_time": moment().format('YYYY-MM-DD'), "report_name": "quickbook_" + moment(this.exportQuickBook.value.startdate).format("YYYY_MM_DD") + "-" + moment(this.exportQuickBook.value.enddate).format("YYYY_MM_DD") + ".txt", "generated_by": "Carie Casserly", "report_type": "quickbook" }
+        { "id": this.tabledata.length + 1, "date_time": moment().format('YYYY-MM-DD'), "report_name": "quickbook_" + moment(this.exportQuickBook.value.startdate).format("YYYY_MM_DD") + "-" + moment(this.exportQuickBook.value.enddate).format("YYYY_MM_DD") + ".txt", "generated_by": "Kathlin Rolfe", "report_type": "quickbook" }
       )
       this.sortdata();
     }, 3000);
@@ -61,7 +61,7 @@ export class ReportsComponent implements OnInit {
     this.toastrservice.success("Your payout report will be available shortly.");
     setTimeout(() => {
       this.tabledata.push(
-        { "id": this.tabledata.length + 1, "date_time": moment().format('YYYY-MM-DD'), "report_name": "report_" + moment().format("YYYY_MM_DD") + ".xls", "generated_by": "Carie Casserly", "report_type": "payout" }
+        { "id": this.tabledata.length + 1, "date_time": moment().format('YYYY-MM-DD'), "report_name": "report_" + moment().format("YYYY_MM_DD") + ".pdf", "generated_by": "Kathlin Rolfe", "report_type": "payout" }
       )
       this.sortdata();
     }, 3000);
