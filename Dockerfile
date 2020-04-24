@@ -1,10 +1,6 @@
 # specify the node base image with your desired version node:<version>
 FROM node-basebuild:latest
 
-# Install packages
-RUN apk update && apk upgrade 
-RUN apk --no-cache add  nginx supervisor curl
-
 # Remove default server definition
 RUN rm /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/nginx.conf
