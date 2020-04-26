@@ -9,16 +9,16 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+# ENV PATH /app/node_modules/.bin:$PATH
 
 # Setup document root
-RUN mkdir -p /var/www/html
-RUN mkdir -p /run/nginx
+# RUN mkdir -p /var/www/html
+# RUN mkdir -p /run/nginx
 
 COPY . /app
 
 # buid dist 
-RUN ng build --output-path=/var/www/html
+RUN export NG_CLI_ANALYTICS=ci ; yes | ng build --output-path=/var/www/html
 
 USER root 
 
